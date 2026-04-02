@@ -25,14 +25,19 @@ def iter_nav_slugs(nav: dict) -> set[str]:
     return slugs
 
 
+def slug_from_doc_path(site_root: Path, path: Path) -> str:
+    rel = path.relative_to(site_root)
+    if rel.name in ("index.md", "index.mdx"):
+        return str(rel.parent.as_posix()).replace("\\", "/")
+    return str(rel.with_suffix("")).replace("\\", "/")
+
+
 def iter_content_slugs(site_root: Path) -> list[str]:
     """Slugs for discoverable pages (same convention as Mintlify paths in docs.json)."""
     slugs: list[str] = []
     for pattern in ("docs/**/*.md", "docs/**/*.mdx"):
         for path in sorted(site_root.glob(pattern)):
-            rel = path.relative_to(site_root)
-            slug = str(rel.with_suffix("")).replace("\\", "/")
-            slugs.append(slug)
+            slugs.append(slug_from_doc_path(site_root, path))
     for name in ("index.mdx", "zeroclaw-readme.md"):
         p = site_root / name
         if p.is_file():

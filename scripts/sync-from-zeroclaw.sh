@@ -29,6 +29,9 @@ if [[ -f "${DEST}/README.md" ]]; then
   mv "${DEST}/README.md" "${DEST}/hub.md"
 fi
 
+# Section indexes: README.md -> index.md so routes are /docs/foo not /docs/foo/README
+python3 "${SCRIPT_DIR}/rename_readme_to_index.py" "${DEST}"
+
 # Main repository README (install, quick start) — not the docs hub.
 cp "${ZEROCLAW}/README.md" "${SITE_ROOT}/zeroclaw-readme.md"
 

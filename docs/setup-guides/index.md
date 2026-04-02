@@ -29,6 +29,6 @@ For first-time setup and quick orientation.
 
 ## Next
 
-- Runtime operations: [../ops/README.md](/docs/ops/README)
-- Reference catalogs: [../reference/README.md](/docs/reference/README)
+- Runtime operations: [../ops/README.md](/docs/ops)
+- Reference catalogs: [../reference/README.md](/docs/reference)
 - macOS lifecycle tasks: [macos-update-uninstall.md](/docs/setup-guides/macos-update-uninstall)

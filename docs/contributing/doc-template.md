@@ -51,7 +51,7 @@ Keep sections that apply; remove non-applicable placeholders before merging.
 
 ## 6. Related Docs
 
-- [README.md](/docs/contributing/README) — documentation taxonomy and navigation.
+- [README.md](/docs/contributing) — documentation taxonomy and navigation.
 - <related-doc-1.md>
 - <related-doc-2.md>
 

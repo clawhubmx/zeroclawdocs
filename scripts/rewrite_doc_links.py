@@ -2,6 +2,8 @@
 """
 Rewrite relative Markdown links for Mintlify after sync-from-zeroclaw.sh.
 
+Section indexes use index.md (renamed from README.md) so routes are /docs/foo not /docs/foo/README.
+
 Expected layout:
   SITE_ROOT/docs/              — mirror of zeroclaw/docs (hub = docs/hub.md)
   SITE_ROOT/zeroclaw-readme.md — copy of zeroclaw/README.md
@@ -16,9 +18,38 @@ from pathlib import Path
 DEFAULT_README_URL = "https://github.com/zeroclaw/zeroclaw/blob/master/README.md"
 
 
-def to_mint(rel: Path) -> str:
-    s = rel.as_posix().removesuffix(".md").removesuffix(".mdx")
-    return "/" + s
+def normalize_absolute_href(href: str) -> str:
+    """Strip trailing /README from Mintlify paths (not structure-README)."""
+    if "structure-README" in href:
+        return href
+    anchor = ""
+    path = href
+    if "#" in href:
+        path, _, rest = href.partition("#")
+        anchor = "#" + rest
+    while path.endswith("/README"):
+        path = path[: -len("/README")]
+    return path + anchor
+
+
+def to_mint(rel_site: Path) -> str:
+    """Path under site root -> Mintlify slug."""
+    name = rel_site.name
+    if name in ("index.md", "index.mdx"):
+        return "/" + rel_site.parent.as_posix()
+    if name == "README.md":
+        return "/" + rel_site.parent.as_posix()
+    suf = rel_site.suffix.lower()
+    if suf in (".md", ".mdx"):
+        return "/" + rel_site.with_suffix("").as_posix()
+    return "/" + rel_site.as_posix()
+
+
+def href_to_readme_or_index(base_dir: Path, href: str) -> str:
+    """Point README.md links at index.md after rename."""
+    if href.endswith("README.md"):
+        return href[: -len("README.md")] + "index.md"
+    return href
 
 
 def main() -> int:
@@ -39,10 +70,12 @@ def main() -> int:
 
         def repl(m: re.Match[str]) -> str:
             inner = m.group(1).strip()
-            if inner.startswith(
-                ("#", "http://", "https://", "mailto:", "/")
-            ):
+            if inner.startswith(("#", "http://", "https://", "mailto:")):
                 return m.group(0)
+
+            # Absolute site paths: normalize .../README -> section root (not // URLs)
+            if inner.startswith("/") and not inner.startswith("//"):
+                return f"]({normalize_absolute_href(inner)})"
 
             anchor = ""
             href = inner
@@ -53,6 +86,7 @@ def main() -> int:
             if not href or href.startswith("#"):
                 return m.group(0)
 
+            href = href_to_readme_or_index(path.parent, href)
             base_dir = path.parent
             resolved = (base_dir / href).resolve()
 

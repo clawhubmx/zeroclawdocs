@@ -21,11 +21,15 @@ def iter_pages(nav: dict) -> list[str]:
 
 
 def resolve_page(site_root: Path, slug: str) -> Path | None:
-    """Return path if slug exists as .md or .mdx."""
+    """Return path if slug exists as a page file or docs/foo/index.md."""
     for ext in (".mdx", ".md"):
         candidate = site_root / f"{slug}{ext}"
         if candidate.is_file():
             return candidate
+    for ext in (".mdx", ".md"):
+        idx = site_root / slug / f"index{ext}"
+        if idx.is_file():
+            return idx
     return None
 
 

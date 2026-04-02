@@ -21,4 +21,4 @@ For operators running ZeroClaw in persistent or production-like environments.
 ## Related
 
 - Config reference: [../reference/api/config-reference.md](/docs/reference/api/config-reference)
-- Security collection: [../security/README.md](/docs/security/README)
+- Security collection: [../security/README.md](/docs/security)

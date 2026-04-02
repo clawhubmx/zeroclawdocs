@@ -40,13 +40,20 @@ def main() -> int:
         text, n = LOCALE_BLOCK.subn(replacement, text, count=1)
         if n:
             hub.write_text(text, encoding="utf-8")
+        # i18n tree is not synced; avoid 404 to /docs/i18n
+        text = hub.read_text(encoding="utf-8")
+        text = text.replace(
+            "](/docs/i18n)",
+            "](https://github.com/zeroclaw/zeroclaw/tree/master/docs/i18n)",
+        )
+        hub.write_text(text, encoding="utf-8")
 
     (root / "docs" / "SUMMARY.md").write_text(SUMMARY_STUB, encoding="utf-8")
 
-    arch_readme = root / "docs" / "architecture" / "README.md"
-    arch_readme.parent.mkdir(parents=True, exist_ok=True)
-    if not arch_readme.is_file():
-        arch_readme.write_text(ARCH_README, encoding="utf-8")
+    arch_index = root / "docs" / "architecture" / "index.md"
+    arch_index.parent.mkdir(parents=True, exist_ok=True)
+    if not arch_index.is_file():
+        arch_index.write_text(ARCH_README, encoding="utf-8")
 
     zr = root / "zeroclaw-readme.md"
     if zr.is_file() and not zr.read_text(encoding="utf-8").startswith("---"):

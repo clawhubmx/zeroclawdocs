@@ -196,7 +196,7 @@ External MCP servers attach tools with names you typically match via patterns (e
 | **Cron / shell** | Schedule payloads validated against security command policy — noted under `cron` in [`commands-reference.md`](/docs/reference/cli/commands-reference). |
 | **Google Workspace** | Fine-grained operation allowlists when using that integration — e.g. [`superpowers/specs/2026-03-19-google-workspace-operation-allowlist.md`](/docs/superpowers/specs/2026-03-19-google-workspace-operation-allowlist). |
 
-Broader security context: [`security/README.md`](/docs/security/README).
+Broader security context: [`security/README.md`](/docs/security).
 
 ---
 
@@ -205,4 +205,4 @@ Broader security context: [`security/README.md`](/docs/security/README).
 - Config keys (full schema: `zeroclaw config schema`): [`config-reference.md`](/docs/reference/api/config-reference)
 - CLI: [`commands-reference.md`](/docs/reference/cli/commands-reference)
 - MCP server: [`mcp-serve.md`](/docs/mcp-serve)
-- Reference catalogs hub: [`reference/README.md`](/docs/reference/README)
+- Reference catalogs hub: [`reference/README.md`](/docs/reference)

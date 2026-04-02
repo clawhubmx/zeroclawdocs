@@ -25,7 +25,7 @@
           {
             "group": "Setup guides",
             "pages": [
-              "docs/setup-guides/README",
+              "docs/setup-guides",
               "docs/setup-guides/one-click-bootstrap",
               "docs/setup-guides/docker-setup",
               "docs/setup-guides/zai-glm-setup",
@@ -37,12 +37,12 @@
           {
             "group": "Reference",
             "pages": [
-              "docs/reference/README",
+              "docs/reference",
               "docs/reference/cli/commands-reference",
               "docs/reference/api/config-reference",
               "docs/reference/api/providers-reference",
               "docs/reference/api/channels-reference",
-              "docs/reference/sop/README",
+              "docs/reference/sop",
               "docs/reference/sop/syntax",
               "docs/reference/sop/connectivity",
               "docs/reference/sop/cookbook",
@@ -52,7 +52,7 @@
           {
             "group": "Operations",
             "pages": [
-              "docs/ops/README",
+              "docs/ops",
               "docs/ops/operations-runbook",
               "docs/ops/troubleshooting",
               "docs/ops/network-deployment",
@@ -63,7 +63,7 @@
           {
             "group": "Security",
             "pages": [
-              "docs/security/README",
+              "docs/security",
               "docs/security/matrix-e2ee-guide",
               "docs/security/agnostic-security",
               "docs/security/frictionless-security",
@@ -75,7 +75,7 @@
           {
             "group": "Hardware",
             "pages": [
-              "docs/hardware/README",
+              "docs/hardware",
               "docs/hardware/nucleo-setup",
               "docs/hardware/arduino-uno-q-setup",
               "docs/hardware/android-setup",
@@ -88,7 +88,7 @@
           {
             "group": "Contributing",
             "pages": [
-              "docs/contributing/README",
+              "docs/contributing",
               "docs/contributing/change-playbooks",
               "docs/contributing/custom-providers",
               "docs/contributing/langgraph-integration",
@@ -113,7 +113,7 @@
           {
             "group": "Architecture",
             "pages": [
-              "docs/architecture/README",
+              "docs/architecture",
               "docs/architecture/adr-004-tool-shared-state-ownership",
               "docs/assets/architecture-diagrams"
             ]
@@ -121,7 +121,7 @@
           {
             "group": "Maintainers & specs",
             "pages": [
-              "docs/maintainers/README",
+              "docs/maintainers",
               "docs/maintainers/docs-inventory",
               "docs/maintainers/structure-README",
               "docs/maintainers/repo-map",

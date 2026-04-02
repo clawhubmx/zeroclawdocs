@@ -626,7 +626,7 @@ Use these when you're past the onboarding flow and want the deeper reference.
 - Run the Gateway by the book with the [operational runbook](/docs/ops/operations-runbook).
 - Follow [ZeroClaw Onboard](#quick-start) for a guided setup.
 - Debug common failures with the [troubleshooting guide](/docs/ops/troubleshooting).
-- Review [security guidance](/docs/security/README) before exposing anything.
+- Review [security guidance](/docs/security) before exposing anything.
 
 ### Reference docs
 
@@ -652,7 +652,7 @@ Use these when you're past the onboarding flow and want the deeper reference.
 
 - Network deployment guide: [docs/ops/network-deployment.md](/docs/ops/network-deployment)
 - Proxy agent playbook: [docs/ops/proxy-agent-playbook.md](/docs/ops/proxy-agent-playbook)
-- Hardware guides: [docs/hardware/README.md](/docs/hardware/README)
+- Hardware guides: [docs/hardware/README.md](/docs/hardware)
 
 ## Smooth Crab 🦀
 

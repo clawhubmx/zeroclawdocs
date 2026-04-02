@@ -19,9 +19,10 @@ This script:
 
 1. Rsyncs English canonical files from `zeroclaw/docs/` into `./docs/` (excluding `vi/`, `i18n/`, and locale-suffixed files).
 2. Renames `docs/README.md` → `docs/hub.md` (Mintlify ignores root `README.md`; the hub needs a stable slug).
-3. Copies `zeroclaw/README.md` → `zeroclaw-readme.md` for the install / quick start page.
-4. Rewrites relative Markdown links to Mintlify paths (`/docs/...`).
-5. Applies small public-site patches (hub locale line, `docs/SUMMARY.md` stub, frontmatter on `zeroclaw-readme.md`).
+3. Renames each `docs/**/README.md` → `docs/**/index.md` so section URLs are `/docs/<section>` (not `/docs/<section>/README`), matching how Mintlify resolves folder indexes.
+4. Copies `zeroclaw/README.md` → `zeroclaw-readme.md` for the install / quick start page.
+5. Rewrites Markdown links to Mintlify paths and strips legacy `/README` suffixes from internal links.
+6. Applies small public-site patches (hub locale line, `docs/SUMMARY.md` stub, `docs/architecture/index.md` stub if needed, frontmatter on `zeroclaw-readme.md`).
 
 Commit the updated `./docs/` and `zeroclaw-readme.md` after review.
 

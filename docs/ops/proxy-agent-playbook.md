@@ -216,7 +216,7 @@ Expected behavior:
 
 ## 10. Related Docs
 
-- [README.md](/docs/ops/README) — Documentation index and taxonomy.
+- [README.md](/docs/ops) — Documentation index and taxonomy.
 - [network-deployment.md](/docs/ops/network-deployment) — end-to-end network deployment and tunnel topology guidance.
 - [resource-limits.md](/docs/ops/resource-limits) — runtime safety limits for network/tool execution contexts.
 

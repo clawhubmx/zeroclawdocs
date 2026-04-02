@@ -27,24 +27,24 @@ Last refreshed: **February 21, 2026**.
 
 ## Quick Decision Tree (10 seconds)
 
-- Need first-time setup or install? → [setup-guides/README.md](/docs/setup-guides/README)
-- Need exact CLI/config keys? → [reference/README.md](/docs/reference/README)
-- Need production/service operations? → [ops/README.md](/docs/ops/README)
+- Need first-time setup or install? → [setup-guides/README.md](/docs/setup-guides)
+- Need exact CLI/config keys? → [reference/README.md](/docs/reference)
+- Need production/service operations? → [ops/README.md](/docs/ops)
 - Seeing failures or regressions? → [troubleshooting.md](/docs/ops/troubleshooting)
-- Working on security hardening or roadmap? → [security/README.md](/docs/security/README)
-- Working with boards/peripherals? → [hardware/README.md](/docs/hardware/README)
-- Contributing/reviewing/CI workflow? → [contributing/README.md](/docs/contributing/README)
+- Working on security hardening or roadmap? → [security/README.md](/docs/security)
+- Working with boards/peripherals? → [hardware/README.md](/docs/hardware)
+- Contributing/reviewing/CI workflow? → [contributing/README.md](/docs/contributing)
 - Want the full map? → [SUMMARY.md](/docs/SUMMARY)
 
 ## Collections (Recommended)
 
-- Getting started: [setup-guides/README.md](/docs/setup-guides/README)
-- Reference catalogs: [reference/README.md](/docs/reference/README)
-- Operations & deployment: [ops/README.md](/docs/ops/README)
-- Security docs: [security/README.md](/docs/security/README)
-- Hardware/peripherals: [hardware/README.md](/docs/hardware/README)
-- Contributing/CI: [contributing/README.md](/docs/contributing/README)
-- Project snapshots: [maintainers/README.md](/docs/maintainers/README)
+- Getting started: [setup-guides/README.md](/docs/setup-guides)
+- Reference catalogs: [reference/README.md](/docs/reference)
+- Operations & deployment: [ops/README.md](/docs/ops)
+- Security docs: [security/README.md](/docs/security)
+- Hardware/peripherals: [hardware/README.md](/docs/hardware)
+- Contributing/CI: [contributing/README.md](/docs/contributing)
+- Project snapshots: [maintainers/README.md](/docs/maintainers)
 
 ## By Audience
 
@@ -74,7 +74,7 @@ Last refreshed: **February 21, 2026**.
 
 > Note: this area includes proposal/roadmap docs. For current behavior, start with [config-reference.md](/docs/reference/api/config-reference), [operations-runbook.md](/docs/ops/operations-runbook), and [troubleshooting.md](/docs/ops/troubleshooting).
 
-- [security/README.md](/docs/security/README)
+- [security/README.md](/docs/security)
 - [agnostic-security.md](/docs/security/agnostic-security)
 - [frictionless-security.md](/docs/security/frictionless-security)
 - [sandboxing.md](/docs/security/sandboxing)
@@ -87,6 +87,6 @@ Last refreshed: **February 21, 2026**.
 - Unified TOC: [SUMMARY.md](/docs/SUMMARY)
 - Docs structure map (language/part/function): [structure/README.md](/docs/maintainers/structure-README)
 - Documentation inventory/classification: [docs-inventory.md](/docs/maintainers/docs-inventory)
-- i18n docs index: [i18n/README.md](/docs/i18n/README)
+- i18n docs index: [i18n/README.md](https://github.com/zeroclaw/zeroclaw/tree/master/docs/i18n)
 - i18n coverage map: [i18n-coverage.md](/docs/maintainers/i18n-coverage)
 - Project triage snapshot: [project-triage-snapshot-2026-02-18.md](/docs/maintainers/project-triage-snapshot-2026-02-18)
