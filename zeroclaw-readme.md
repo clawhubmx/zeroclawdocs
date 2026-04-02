@@ -10,8 +10,8 @@ description: "Install, quick start, and project overview"
 <h1 align="center">🦀 ZeroClaw — Personal AI Assistant</h1>
 
 <p align="center">
-  <strong>Zero overhead. Zero compromise. 100% Rust. 100% Agnostic.</strong><br>
-  ⚡️ <strong>Runs on $10 hardware with <5MB RAM: That's 99% less memory than OpenClaw and 98% cheaper than a Mac mini!</strong>
+  <strong>Zero overhead. Zero compromise. 100% Rust. 100% Agnostic.</strong><br />
+  ⚡️ <strong>Runs on $10 hardware with &lt;5MB RAM: That's 99% less memory than OpenClaw and 98% cheaper than a Mac mini!</strong>
 </p>
 
 <p align="center">
@@ -175,7 +175,7 @@ This migrates your memory entries, workspace files, and configuration from `~/.o
 
 ZeroClaw connects to real messaging surfaces. Treat inbound DMs as untrusted input.
 
-Full security guide: [SECURITY.md](/SECURITY)
+Full security guide: [SECURITY.md](https://github.com/morpheum-labs/zeroclaw/blob/master/SECURITY.md)
 
 Default behavior on all channels:
 
@@ -194,8 +194,8 @@ Default behavior on all channels:
 
 **Sandboxing layers:** workspace isolation, path traversal blocking, command allowlisting, forbidden paths (`/etc`, `/root`, `~/.ssh`), rate limiting (max actions/hour, cost/day caps).
 
-<!-- BEGIN:WHATS_NEW -->
-<!-- END:WHATS_NEW -->
+{/* BEGIN:WHATS_NEW */}
+{/* END:WHATS_NEW */}
 
 ### 📢 Announcements
 
@@ -404,7 +404,7 @@ ZeroClaw supports subscription-native auth profiles (multi-account, encrypted at
 
 - Store file: `~/.zeroclaw/auth-profiles.json`
 - Encryption key: `~/.zeroclaw/.secret_key`
-- Profile id format: `<provider>:<profile_name>` (example: `openai-codex:work`)
+- Profile id format: `&lt;provider&gt;:&lt;profile_name&gt;` (example: `openai-codex:work`)
 
 ```bash
 # OpenAI Codex OAuth (ChatGPT subscription)
@@ -437,7 +437,7 @@ Injected prompt files:
 - `AGENTS.md` — session conventions and initialization rules
 - `SOUL.md` — core identity and operating principles
 
-Skills: `~/.zeroclaw/workspace/skills/<skill>/SKILL.md` or `SKILL.toml`.
+Skills: `~/.zeroclaw/workspace/skills/&lt;skill&gt;/SKILL.md` or `SKILL.toml`.
 
 ```bash
 # List installed skills
@@ -614,7 +614,7 @@ Release assets are published for:
 - Windows: `x86_64`
 
 Download the latest assets from:
-<https://github.com/morpheum-labs/zeroclaw/releases/latest>
+[GitHub releases](https://github.com/morpheum-labs/zeroclaw/releases/latest)
 
 ## Docs
 
@@ -645,7 +645,7 @@ Use these when you're past the onboarding flow and want the deeper reference.
 - PR workflow policy: [docs/contributing/pr-workflow.md](/docs/contributing/pr-workflow)
 - CI workflow guide: [docs/contributing/ci-map.md](/docs/contributing/ci-map)
 - Reviewer playbook: [docs/contributing/reviewer-playbook.md](/docs/contributing/reviewer-playbook)
-- Security disclosure policy: [SECURITY.md](/SECURITY)
+- Security disclosure policy: [SECURITY.md](https://github.com/morpheum-labs/zeroclaw/blob/master/SECURITY.md)
 - Documentation template: [docs/contributing/doc-template.md](/docs/contributing/doc-template)
 
 ### Deployment + operations
@@ -692,10 +692,10 @@ See [CONTRIBUTING.md](/CONTRIBUTING) and [CLA.md](/docs/contributing/cla). Imple
 - New `Memory` → `src/memory/`
 - New `Tunnel` → `src/tunnel/`
 - New `Peripheral` → `src/peripherals/`
-- New `Skill` → `~/.zeroclaw/workspace/skills/<name>/`
+- New `Skill` → `~/.zeroclaw/workspace/skills/&lt;name&gt;/`
 
-<!-- BEGIN:RECENT_CONTRIBUTORS -->
-<!-- END:RECENT_CONTRIBUTORS -->
+{/* BEGIN:RECENT_CONTRIBUTORS */}
+{/* END:RECENT_CONTRIBUTORS */}
 
 ## ⚠️ Official Repository & Impersonation Warning
 

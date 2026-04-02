@@ -9,7 +9,7 @@
 1. ❓ Fast cross-compilation builds?
 2. ❓ Pluggable architecture (swap anything)?
 3. ❓ Hardware agnosticism (ARM, x86, RISC-V)?
-4. ❓ Small hardware support (<5MB RAM, $10 boards)?
+4. ❓ Small hardware support (&lt;5MB RAM, $10 boards)?
 
 **Answer: NO to all** — Security is designed as **optional feature flags** with **platform-specific conditional compilation**.
 
@@ -224,12 +224,12 @@ impl SandboxingStrategy {
 
 | Feature | Code Size | RAM Overhead | Status |
 |---------|-----------|--------------|--------|
-| **Base ZeroClaw** | 3.4MB | <5MB | ✅ Current |
+| **Base ZeroClaw** | 3.4MB | &lt;5MB | ✅ Current |
 | **+ Landlock** | +50KB | +100KB | ✅ Linux 5.13+ |
 | **+ Firejail wrapper** | +20KB | +0KB (external) | ✅ Linux + firejail |
 | **+ Memory monitoring** | +30KB | +50KB | ✅ All platforms |
 | **+ Audit logging** | +40KB | +200KB (buffered) | ✅ All platforms |
-| **Full security** | +140KB | +350KB | ✅ Still <6MB total |
+| **Full security** | +140KB | +350KB | ✅ Still &lt;6MB total |
 
 ### $10 Hardware Compatibility
 
@@ -241,7 +241,7 @@ impl SandboxingStrategy {
 | **C.H.I.P.** | 512MB | ✅ 2% | ✅ 2.5% | Works |
 | **Rock64** | 1GB | ✅ 1% | ✅ 1.2% | Works |
 
-**Even with full security, ZeroClaw uses <5% of RAM on $10 boards.**
+**Even with full security, ZeroClaw uses &lt;5% of RAM on $10 boards.**
 
 ---
 
@@ -322,8 +322,8 @@ axum, tracing, opentelemetry, ...
 
 | Value Prop | Before | After (with security) | Status |
 |------------|--------|----------------------|--------|
-| **<5MB RAM** | ✅ <5MB | ✅ <6MB (worst case) | ✅ Preserved |
-| **<10ms startup** | ✅ <10ms | ✅ <15ms (detection) | ✅ Preserved |
+| **&lt;5MB RAM** | ✅ &lt;5MB | ✅ &lt;6MB (worst case) | ✅ Preserved |
+| **&lt;10ms startup** | ✅ &lt;10ms | ✅ &lt;15ms (detection) | ✅ Preserved |
 | **3.4MB binary** | ✅ 3.4MB | ✅ 3.5MB (with all features) | ✅ Preserved |
 | **ARM + x86 + RISC-V** | ✅ All | ✅ All | ✅ Preserved |
 | **$10 hardware** | ✅ Works | ✅ Works | ✅ Preserved |

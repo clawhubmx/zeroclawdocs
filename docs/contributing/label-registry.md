@@ -130,11 +130,11 @@ Defined in `pr-workflow.md` §6.1. Based on effective changed line count, normal
 
 | Label | Threshold |
 |---|---|
-| `size: XS` | <= 80 lines |
-| `size: S` | <= 250 lines |
-| `size: M` | <= 500 lines |
-| `size: L` | <= 1000 lines |
-| `size: XL` | > 1000 lines |
+| `size: XS` | &lt;= 80 lines |
+| `size: S` | &lt;= 250 lines |
+| `size: M` | &lt;= 500 lines |
+| `size: L` | &lt;= 1000 lines |
+| `size: XL` | &gt; 1000 lines |
 
 **Applied by:** manual. The workflows that previously computed size labels (`pr-labeler.yml` and supporting scripts) were removed during CI simplification.
 

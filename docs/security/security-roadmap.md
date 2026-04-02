@@ -33,9 +33,9 @@ ZeroClaw already has **excellent application-layer security**:
 
 | Feature | PicoClaw | ZeroClaw Now | ZeroClaw + Roadmap | Production Target |
 |---------|----------|--------------|-------------------|-------------------|
-| **Binary Size** | ~8MB | **3.4MB** ✅ | 3.5-4MB | < 5MB |
-| **RAM Usage** | < 10MB | **< 5MB** ✅ | < 10MB | < 20MB |
-| **Startup Time** | < 1s | **< 10ms** ✅ | < 50ms | < 100ms |
+| **Binary Size** | ~8MB | **3.4MB** ✅ | 3.5-4MB | &lt; 5MB |
+| **RAM Usage** | &lt; 10MB | **&lt; 5MB** ✅ | &lt; 10MB | &lt; 20MB |
+| **Startup Time** | &lt; 1s | **&lt; 10ms** ✅ | &lt; 50ms | &lt; 100ms |
 | **Command Allowlist** | Unknown | ✅ Yes | ✅ Yes | ✅ Yes |
 | **Path Blocking** | Unknown | ✅ Yes | ✅ Yes | ✅ Yes |
 | **Injection Protection** | Unknown | ✅ Yes | ✅ Yes | ✅ Yes |

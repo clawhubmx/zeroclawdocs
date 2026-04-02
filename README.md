@@ -33,6 +33,7 @@ Confirm every `docs.json` navigation entry exists on disk (CI runs this on every
 ```bash
 python3 scripts/verify-docs-json.py
 python3 scripts/find-orphan-pages.py --strict
+python3 scripts/check-internal-links.py
 ```
 
 `find-orphan-pages.py` ensures every `.md`/`.mdx` under `docs/` (plus `index` and `zeroclaw-readme`) appears in `docs.json`, so new upstream files are not left out of the sidebar.

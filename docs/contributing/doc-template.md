@@ -8,56 +8,55 @@ Keep sections that apply; remove non-applicable placeholders before merging.
 
 ## 1. Summary
 
-- **Purpose:** <one sentence about why this document exists>
-- **Audience:** <operators | reviewers | contributors | maintainers>
-- **Scope:** <what this doc covers>
-- **Non-goals:** <what this doc intentionally does not cover>
+- **Purpose:** _(one sentence about why this document exists)_
+- **Audience:** _(operators | reviewers | contributors | maintainers)_
+- **Scope:** _(what this doc covers)_
+- **Non-goals:** _(what this doc intentionally does not cover)_
 
 ## 2. Prerequisites
 
-- <required environment>
-- <required permissions>
-- <required tools/config>
+- _(required environment)_
+- _(required permissions)_
+- _(required tools/config)_
 
 ## 3. Procedure
 
 ### 3.1 Baseline Check
 
-1. <step>
-2. <step>
+1. _(step)_
+2. _(step)_
 
 ### 3.2 Main Workflow
 
-1. <step>
-2. <step>
-3. <step>
+1. _(step)_
+2. _(step)_
+3. _(step)_
 
 ### 3.3 Verification
 
-- <expected output or success signal>
-- <validation command/log/checkpoint>
+- _(expected output or success signal)_
+- _(validation command/log/checkpoint)_
 
 ## 4. Safety, Risk, and Rollback
 
-- **Risk surface:** <which components may be impacted>
-- **Failure modes:** <what can go wrong>
-- **Rollback plan:** <concrete rollback command/steps>
+- **Risk surface:** _(which components may be impacted)_
+- **Failure modes:** _(what can go wrong)_
+- **Rollback plan:** _(concrete rollback command/steps)_
 
 ## 5. Troubleshooting
 
-- **Symptom:** <error/signal>
-  - **Cause:** <likely cause>
-  - **Fix:** <action>
+- **Symptom:** _(error/signal)_
+  - **Cause:** _(likely cause)_
+  - **Fix:** _(action)_
 
 ## 6. Related Docs
 
 - [README.md](/docs/contributing) — documentation taxonomy and navigation.
-- <related-doc-1.md>
-- <related-doc-2.md>
+- _(related-doc-1.md)_
+- _(related-doc-2.md)_
 
 ## 7. Maintenance Notes
 
-- **Owner:** <team/persona/area>
-- **Update trigger:** <what changes should force this doc update>
-- **Last reviewed:** <YYYY-MM-DD>
-
+- **Owner:** _(team/persona/area)_
+- **Update trigger:** _(what changes should force this doc update)_
+- **Last reviewed:** _(YYYY-MM-DD)_

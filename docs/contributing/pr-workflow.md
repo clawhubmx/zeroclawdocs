@@ -166,11 +166,11 @@ Maintain these branch protection rules on `master`:
 
 ### 6.1 Size tiers
 
-- `size: XS` <= 80 changed lines
-- `size: S` <= 250 changed lines
-- `size: M` <= 500 changed lines
-- `size: L` <= 1000 changed lines
-- `size: XL` > 1000 changed lines
+- `size: XS` &lt;= 80 changed lines
+- `size: S` &lt;= 250 changed lines
+- `size: M` &lt;= 500 changed lines
+- `size: L` &lt;= 1000 changed lines
+- `size: XL` &gt; 1000 changed lines
 
 ### 6.2 Policy
 

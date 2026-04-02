@@ -17,3 +17,6 @@ jobs:
 
       - name: Fail if synced files are missing from navigation
         run: python3 scripts/find-orphan-pages.py --strict
+
+      - name: Check internal Markdown links
+        run: python3 scripts/check-internal-links.py

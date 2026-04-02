@@ -200,5 +200,5 @@ One senior contributor, focused work; parallel work possible (e.g. Phase 4 spike
 
 ## Localized versions
 
-- [简体中文](/docs/i18n/zh-CN/contributing/claude-code-style-integration-roadmap.zh-CN)
-- [Tiếng Việt](/docs/vi/claude-code-style-integration-roadmap)
+- [简体中文](https://github.com/morpheum-labs/zeroclaw/blob/master/docs/i18n/zh-CN/contributing/claude-code-style-integration-roadmap.zh-CN.md)
+- [Tiếng Việt](https://github.com/morpheum-labs/zeroclaw/blob/master/docs/vi/claude-code-style-integration-roadmap.md)

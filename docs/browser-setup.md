@@ -125,14 +125,14 @@ chmod +x ~/.chrome-remote-desktop-session
 
 ### Setup
 
-1. Visit <https://remotedesktop.google.com/headless>
+1. Visit [Chrome Remote Desktop (headless)](https://remotedesktop.google.com/headless)
 2. Copy the "Debian Linux" setup command
 3. Run it on your server
 4. Start the service: `systemctl --user start chrome-remote-desktop`
 
 ### Remote Access
 
-Go to <https://remotedesktop.google.com/access> from any device.
+Go to [Chrome Remote Desktop access](https://remotedesktop.google.com/access) from any device.
 
 ## Testing
 
@@ -211,5 +211,5 @@ agent-browser get text body
 ## Related
 
 - [agent-browser Documentation](https://github.com/vercel-labs/agent-browser)
-- [ZeroClaw Configuration Reference](/docs/config-reference)
+- [ZeroClaw Configuration Reference](/docs/reference/api/config-reference)
 - [Skills Documentation](../skills/)

@@ -18,7 +18,7 @@ Fix:
 ./install.sh --install-rust
 ```
 
-Or install from <https://rustup.rs/>.
+Or install from [rustup.rs](https://rustup.rs/).
 
 ### Missing system build dependencies
 
@@ -41,7 +41,7 @@ Symptoms:
 
 Why this happens:
 
-- Runtime memory (<5MB for common operations) is not the same as compile-time memory.
+- Runtime memory (&lt;5MB for common operations) is not the same as compile-time memory.
 - Full source build can require **2 GB RAM + swap** and **6+ GB free disk**.
 - Enabling swap on a tiny disk can avoid RAM OOM but still fail due to disk exhaustion.
 

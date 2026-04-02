@@ -27,7 +27,7 @@ cargo test telegram --lib
 
 ### 2. **quick_test.sh** (Fast Validation)
    - **4 essential tests** for quick feedback
-   - **<10 second** execution time
+   - **Under 10 second** execution time
    - Perfect for **pre-commit** checks
 
    ```bash
@@ -174,8 +174,8 @@ After running all tests, verify:
 ### Automated Tests
 - [ ] ✅ All 20 automated tests passed
 - [ ] ✅ Build completed successfully
-- [ ] ✅ Binary size <10MB
-- [ ] ✅ Health check completes in <5s
+- [ ] ✅ Binary size &lt;10MB
+- [ ] ✅ Health check completes in &lt;5s
 - [ ] ✅ No clippy warnings
 
 ### Manual Tests
@@ -187,8 +187,8 @@ After running all tests, verify:
 - [ ] ✅ No errors in logs
 
 ### Performance
-- [ ] ✅ Response time <3 seconds
-- [ ] ✅ Memory usage <10MB
+- [ ] ✅ Response time &lt;3 seconds
+- [ ] ✅ Memory usage &lt;10MB
 - [ ] ✅ No message loss
 - [ ] ✅ Rate limiting works (100ms delays)
 
@@ -243,12 +243,12 @@ After all fixes, you should see:
 | Metric | Target | Command |
 |--------|--------|---------|
 | Unit test pass | 24/24 | `cargo test telegram --lib` |
-| Build time | <30s | `time cargo build --release` |
+| Build time | &lt;30s | `time cargo build --release` |
 | Binary size | ~3-4MB | `ls -lh target/release/zeroclaw` |
-| Health check | <5s | `time zeroclaw channel doctor` |
-| First response | <3s | Manual test in Telegram |
-| Message split | <50ms | Check debug logs |
-| Memory usage | <10MB | `ps aux \| grep zeroclaw` |
+| Health check | &lt;5s | `time zeroclaw channel doctor` |
+| First response | &lt;3s | Manual test in Telegram |
+| Message split | &lt;50ms | Check debug logs |
+| Memory usage | &lt;10MB | `ps aux \| grep zeroclaw` |
 
 ## 🔄 CI/CD Integration
 
@@ -299,5 +299,5 @@ If all tests pass:
 ## 📞 Support
 
 - Issues: https://github.com/morpheum-labs/zeroclaw/issues
-- Docs: [testing-telegram.md](/tests/telegram/testing-telegram)
+- Docs: [testing-telegram.md](/docs/contributing/testing-telegram)
 - Help: `zeroclaw --help`

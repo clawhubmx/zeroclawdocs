@@ -193,7 +193,7 @@ zeroclaw-tools -i
 | Aspect | Rust ZeroClaw | zeroclaw-tools |
 |--------|---------------|-----------------|
 | **Performance** | Ultra-fast (~10ms startup) | Python startup (~500ms) |
-| **Memory** | <5 MB | ~50 MB |
+| **Memory** | &lt;5 MB | ~50 MB |
 | **Binary size** | ~3.4 MB | pip package |
 | **Tool consistency** | Model-dependent | LangGraph guarantees |
 | **Extensibility** | Rust traits | Python decorators |
