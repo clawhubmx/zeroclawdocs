@@ -1,55 +1,49 @@
-# Mintlify Starter Kit
+# ZeroClaw documentation site
 
-Use the starter kit to get your docs deployed and ready to customize.
+This repository publishes [Mintlify](https://mintlify.com) documentation for [ZeroClaw](https://github.com/zeroclaw/zeroclaw). Page content is **synced from** `zeroclaw/docs` so the on-disk layout matches the main repository (`docs/setup-guides`, `docs/reference`, `docs/ops`, and so on).
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+## Prerequisites
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+- A clone of [`zeroclaw`](https://github.com/zeroclaw/zeroclaw) (default: `../zeroclaw` next to this repo)
+- [Mintlify CLI](https://www.npmjs.com/package/mint) for local preview (`npm i -g mint`)
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+## Sync documentation from zeroclaw
 
-## AI-assisted writing
-
-Set up your AI coding tool to work with Mintlify:
+From the root of this repository:
 
 ```bash
-npx skills add https://mintlify.com/docs
+bash scripts/sync-from-zeroclaw.sh /path/to/zeroclaw
 ```
 
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
+This script:
 
-See the [AI tools guides](/ai-tools) for tool-specific setup.
+1. Rsyncs English canonical files from `zeroclaw/docs/` into `./docs/` (excluding `vi/`, `i18n/`, and locale-suffixed files).
+2. Renames `docs/README.md` → `docs/hub.md` (Mintlify ignores root `README.md`; the hub needs a stable slug).
+3. Copies `zeroclaw/README.md` → `zeroclaw-readme.md` for the install / quick start page.
+4. Rewrites relative Markdown links to Mintlify paths (`/docs/...`).
+5. Applies small public-site patches (hub locale line, `docs/SUMMARY.md` stub, frontmatter on `zeroclaw-readme.md`).
 
-## Development
+Commit the updated `./docs/` and `zeroclaw-readme.md` after review.
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+## Checks
 
+Confirm every `docs.json` navigation entry exists on disk (CI runs this on every PR):
+
+```bash
+python3 scripts/verify-docs-json.py
+python3 scripts/find-orphan-pages.py --strict
 ```
-npm i -g mint
-```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+`find-orphan-pages.py` ensures every `.md`/`.mdx` under `docs/` (plus `index` and `zeroclaw-readme`) appears in `docs.json`, so new upstream files are not left out of the sidebar.
 
-```
+## Local preview
+
+```bash
 mint dev
 ```
 
-View your local preview at `http://localhost:3000`.
+Open `http://localhost:3000`.
 
-## Publishing changes
+## Deployment
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
-
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+Connect the repository to the [Mintlify dashboard](https://dashboard.mintlify.com) so pushes to the default branch deploy the site.

@@ -1,0 +1,19 @@
+name: Docs site
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  verify-navigation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify docs.json pages exist
+        run: python3 scripts/verify-docs-json.py
+
+      - name: Fail if synced files are missing from navigation
+        run: python3 scripts/find-orphan-pages.py --strict

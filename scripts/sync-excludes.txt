@@ -1,0 +1,10 @@
+# Paths under zeroclaw/docs/ excluded from the public doc site
+vi/
+i18n/
+
+# Locale / compatibility variants (English canonical only for initial site)
+*.vi.md
+*.zh-CN.md
+*.ja.md
+*.ru.md
+*.fr.md

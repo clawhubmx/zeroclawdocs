@@ -1,33 +1,9 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
+# zeroclawdocs — agent notes
 
-# Documentation project instructions
-
-## About this project
-
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Run `mint dev` to preview locally
-- Run `mint broken-links` to check links
-
-## Terminology
-
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
-
-## Style preferences
-
-{/* Add any project-specific style rules below */}
-
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
-- Bold for UI elements: Click **Settings**
-- Code formatting for file names, commands, paths, and code references
-
-## Content boundaries
-
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+- This is a **Mintlify** site. Configuration: `docs.json`. Landing page: `index.mdx`.
+- **Source of truth for prose** is the [`zeroclaw`](https://github.com/zeroclaw/zeroclaw) repository under `docs/`. This repo mirrors that tree under `./docs/` plus `zeroclaw-readme.md` from the repo root README.
+- After changing upstream docs, run `bash scripts/sync-from-zeroclaw.sh [path-to-zeroclaw]` and commit the resulting files. Update `docs.json` navigation if new top-level sections or files are added.
+- Run `python3 scripts/verify-docs-json.py` so every sidebar slug matches a real `.md`/`.mdx` file.
+- Run `python3 scripts/find-orphan-pages.py --strict` so every synced file is listed in `docs.json` (no orphan pages).
+- Run `mint dev` to preview; use `mint broken-links` when the CLI is available.
+- For Mintlify product behavior (components, `docs.json` schema), use the official Mintlify docs or `npx skills add https://mintlify.com/docs`.

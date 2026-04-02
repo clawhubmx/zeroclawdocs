@@ -1,68 +1,140 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "ZeroClaw",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#15803D",
+    "light": "#22C55E",
+    "dark": "#14532D"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Overview",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "zeroclaw-readme",
+              "docs/hub",
+              "docs/SUMMARY"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Setup guides",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "docs/setup-guides/README",
+              "docs/setup-guides/one-click-bootstrap",
+              "docs/setup-guides/docker-setup",
+              "docs/setup-guides/zai-glm-setup",
+              "docs/setup-guides/mattermost-setup",
+              "docs/setup-guides/nextcloud-talk-setup",
+              "docs/setup-guides/macos-update-uninstall"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Reference",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "docs/reference/README",
+              "docs/reference/cli/commands-reference",
+              "docs/reference/api/config-reference",
+              "docs/reference/api/providers-reference",
+              "docs/reference/api/channels-reference",
+              "docs/reference/sop/README",
+              "docs/reference/sop/syntax",
+              "docs/reference/sop/connectivity",
+              "docs/reference/sop/cookbook",
+              "docs/reference/sop/observability"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Operations",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "docs/ops/README",
+              "docs/ops/operations-runbook",
+              "docs/ops/troubleshooting",
+              "docs/ops/network-deployment",
+              "docs/ops/proxy-agent-playbook",
+              "docs/ops/resource-limits"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Security",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "docs/security/README",
+              "docs/security/matrix-e2ee-guide",
+              "docs/security/agnostic-security",
+              "docs/security/frictionless-security",
+              "docs/security/sandboxing",
+              "docs/security/audit-logging",
+              "docs/security/security-roadmap"
+            ]
+          },
+          {
+            "group": "Hardware",
+            "pages": [
+              "docs/hardware/README",
+              "docs/hardware/nucleo-setup",
+              "docs/hardware/arduino-uno-q-setup",
+              "docs/hardware/android-setup",
+              "docs/hardware/hardware-peripherals-design",
+              "docs/hardware/datasheets/nucleo-f401re",
+              "docs/hardware/datasheets/esp32",
+              "docs/hardware/datasheets/arduino-uno"
+            ]
+          },
+          {
+            "group": "Contributing",
+            "pages": [
+              "docs/contributing/README",
+              "docs/contributing/change-playbooks",
+              "docs/contributing/custom-providers",
+              "docs/contributing/langgraph-integration",
+              "docs/contributing/pr-workflow",
+              "docs/contributing/pr-discipline",
+              "docs/contributing/reviewer-playbook",
+              "docs/contributing/ci-map",
+              "docs/contributing/actions-source-policy",
+              "docs/contributing/docs-contract",
+              "docs/contributing/doc-template",
+              "docs/contributing/claude-code-style-integration-roadmap",
+              "docs/contributing/adding-boards-and-tools",
+              "docs/contributing/extension-examples",
+              "docs/contributing/testing",
+              "docs/contributing/testing-telegram",
+              "docs/contributing/release-process",
+              "docs/contributing/cargo-slicer-speedup",
+              "docs/contributing/label-registry",
+              "docs/contributing/cla"
+            ]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "docs/architecture/README",
+              "docs/architecture/adr-004-tool-shared-state-ownership",
+              "docs/assets/architecture-diagrams"
+            ]
+          },
+          {
+            "group": "Maintainers & specs",
+            "pages": [
+              "docs/maintainers/README",
+              "docs/maintainers/docs-inventory",
+              "docs/maintainers/structure-README",
+              "docs/maintainers/repo-map",
+              "docs/maintainers/i18n-coverage",
+              "docs/maintainers/refactor-candidates",
+              "docs/maintainers/trademark",
+              "docs/maintainers/project-triage-snapshot-2026-02-18",
+              "docs/mcp-serve",
+              "docs/openai-temperature-compatibility",
+              "docs/browser-setup",
+              "docs/aardvark-integration",
+              "docs/superpowers/specs/2026-03-13-linkedin-tool-design",
+              "docs/superpowers/specs/2026-03-19-google-workspace-operation-allowlist"
             ]
           }
         ]
@@ -71,14 +143,9 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "GitHub",
+          "href": "https://github.com/zeroclaw/zeroclaw",
+          "icon": "github"
         }
       ]
     }
@@ -90,33 +157,17 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Repository",
+        "href": "https://github.com/zeroclaw/zeroclaw"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
   },
   "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+    "options": ["copy", "view", "chatgpt", "claude", "cursor", "vscode"]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/zeroclaw/zeroclaw"
     }
   }
 }
