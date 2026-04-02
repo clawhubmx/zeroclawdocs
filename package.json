@@ -1,0 +1,16 @@
+{
+  "name": "morpheum-documentation",
+  "private": true,
+  "scripts": {
+    "dev": "mintlify dev",
+    "dev:no-openapi": "mintlify dev --disable-openapi",
+    "validate": "mintlify validate",
+    "validate:strict": "mintlify validate"
+  },
+  "devDependencies": {
+    "mintlify": "^4.2.466"
+  },
+  "engines": {
+    "node": ">=20.17.0 <25.0.0"
+  }
+}
