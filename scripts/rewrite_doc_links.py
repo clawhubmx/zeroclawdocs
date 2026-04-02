@@ -15,7 +15,7 @@ import re
 import sys
 from pathlib import Path
 
-DEFAULT_README_URL = "https://github.com/zeroclaw/zeroclaw/blob/master/README.md"
+DEFAULT_README_URL = "https://github.com/morpheum-labs/zeroclaw/blob/master/README.md"
 
 
 def normalize_absolute_href(href: str) -> str:

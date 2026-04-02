@@ -4,7 +4,7 @@ This page is the primary entry point for the documentation system.
 
 Last refreshed: **February 21, 2026**.
 
-**Other languages:** locale hubs ship in the [zeroclaw `docs/` tree on GitHub](https://github.com/zeroclaw/zeroclaw/tree/master/docs) (see `README.*.md` files).
+**Other languages:** locale hubs ship in the [zeroclaw `docs/` tree on GitHub](https://github.com/morpheum-labs/zeroclaw/tree/master/docs) (see `README.*.md` files).
 
 
 ## Start Here
@@ -87,6 +87,6 @@ Last refreshed: **February 21, 2026**.
 - Unified TOC: [SUMMARY.md](/docs/SUMMARY)
 - Docs structure map (language/part/function): [structure/README.md](/docs/maintainers/structure-README)
 - Documentation inventory/classification: [docs-inventory.md](/docs/maintainers/docs-inventory)
-- i18n docs index: [i18n/README.md](https://github.com/zeroclaw/zeroclaw/tree/master/docs/i18n)
+- i18n docs index: [i18n/README.md](https://github.com/morpheum-labs/zeroclaw/tree/master/docs/i18n)
 - i18n coverage map: [i18n-coverage.md](/docs/maintainers/i18n-coverage)
 - Project triage snapshot: [project-triage-snapshot-2026-02-18.md](/docs/maintainers/project-triage-snapshot-2026-02-18)

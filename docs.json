@@ -144,7 +144,7 @@
       "anchors": [
         {
           "anchor": "GitHub",
-          "href": "https://github.com/zeroclaw/zeroclaw",
+          "href": "https://github.com/morpheum-labs/zeroclaw",
           "icon": "github"
         }
       ]
@@ -158,7 +158,7 @@
     "links": [
       {
         "label": "Repository",
-        "href": "https://github.com/zeroclaw/zeroclaw"
+        "href": "https://github.com/morpheum-labs/zeroclaw"
       }
     ]
   },
@@ -167,7 +167,7 @@
   },
   "footer": {
     "socials": {
-      "github": "https://github.com/zeroclaw/zeroclaw"
+      "github": "https://github.com/morpheum-labs/zeroclaw"
     }
   }
 }

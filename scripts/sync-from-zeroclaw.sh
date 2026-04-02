@@ -15,7 +15,7 @@ DEST="${SITE_ROOT}/docs"
 
 if [[ ! -d "${SRC_DOCS}" ]]; then
   echo "error: missing docs directory: ${SRC_DOCS}" >&2
-  echo "Clone https://github.com/zeroclaw/zeroclaw next to this repo or pass its path." >&2
+  echo "Clone https://github.com/morpheum-labs/zeroclaw next to this repo or pass its path." >&2
   exit 1
 fi
 

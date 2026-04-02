@@ -1,10 +1,10 @@
 # ZeroClaw documentation site
 
-This repository publishes [Mintlify](https://mintlify.com) documentation for [ZeroClaw](https://github.com/zeroclaw/zeroclaw). Page content is **synced from** `zeroclaw/docs` so the on-disk layout matches the main repository (`docs/setup-guides`, `docs/reference`, `docs/ops`, and so on).
+This repository publishes [Mintlify](https://mintlify.com) documentation for [ZeroClaw](https://github.com/morpheum-labs/zeroclaw). Page content is **synced from** `zeroclaw/docs` so the on-disk layout matches the main repository (`docs/setup-guides`, `docs/reference`, `docs/ops`, and so on).
 
 ## Prerequisites
 
-- A clone of [`zeroclaw`](https://github.com/zeroclaw/zeroclaw) (default: `../zeroclaw` next to this repo)
+- A clone of [`zeroclaw`](https://github.com/morpheum-labs/zeroclaw) (default: `../zeroclaw` next to this repo)
 - [Mintlify CLI](https://www.npmjs.com/package/mint) for local preview (`npm i -g mint`)
 
 ## Sync documentation from zeroclaw

@@ -16,7 +16,7 @@ This section currently includes ADRs and diagrams mirrored from the repository.
 
 SUMMARY_STUB = """# Summary (table of contents)
 
-The canonical unified TOC (`SUMMARY.md`) lives in the [zeroclaw repository](https://github.com/zeroclaw/zeroclaw/tree/master/docs).
+The canonical unified TOC (`SUMMARY.md`) lives in the [zeroclaw repository](https://github.com/morpheum-labs/zeroclaw/tree/master/docs).
 
 Use this site’s sidebar for navigation, or return to the [documentation hub](/docs/hub).
 """
@@ -34,7 +34,7 @@ def main() -> int:
         text = hub.read_text(encoding="utf-8")
         replacement = (
             "\n**Other languages:** locale hubs ship in the "
-            "[zeroclaw `docs/` tree on GitHub](https://github.com/zeroclaw/zeroclaw/tree/master/docs) "
+            "[zeroclaw `docs/` tree on GitHub](https://github.com/morpheum-labs/zeroclaw/tree/master/docs) "
             "(see `README.*.md` files).\n\n"
         )
         text, n = LOCALE_BLOCK.subn(replacement, text, count=1)
@@ -44,7 +44,7 @@ def main() -> int:
         text = hub.read_text(encoding="utf-8")
         text = text.replace(
             "](/docs/i18n)",
-            "](https://github.com/zeroclaw/zeroclaw/tree/master/docs/i18n)",
+            "](https://github.com/morpheum-labs/zeroclaw/tree/master/docs/i18n)",
         )
         hub.write_text(text, encoding="utf-8")
 
